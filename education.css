@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Inika;
+}
+body{
+    background-color: #632626;
+    padding: 2%;
+    color: #ffffff;
+}
+.container{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+   
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.maincontainer{
+    background-color: black;
+    padding: 1%;
+    border-radius: 30px;
+}
+img{
+    border-radius: 15px;
+}
+.propic{
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.name{
+    font-size: 30px;
+    color: #9D5353;
+    margin: 15px;
+}
+.underline {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align:center;
+    justify-content: center;
+    color:#9D5353;
+    margin-right: 50px;
+  
+  }
+  .underline::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 6px;
+    border-radius: 12px;
+    background-color:#ffffff;
+    margin: 10px auto 0;
+}
+  
+.img1{
+    height: 30px;
+    margin: 15px;
+}
+.social-icon-container{
+    margin-left: 35px;
+}
+.cardp{
+    margin-top: 25px;
+    display: inline;
+}
+.card{
+    height: 200px;
+    width: 250px;
+    margin: 15px;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+/* nav bar */
+
+nav{
+    background-color: grey;
+    opacity: 0.5;
+    text-align: center;
+    border-radius: 15px;
+    height: 100%;
+    margin-right: 5%;
+  
+}
+
+.navicondiv{
+    padding: 5% 5px 5px 5px;
+}
+
+.navicon1{
+    color: #ffffff; 
+    margin: 70px 0 100px 0;
+}
+
+.navicon{
+    color: #ffffff; 
+    margin: 0 0 100px 0;
+}
+.navicon2{
+    color: #ffffff;
+}
+
+/* education */
+
+.container1 {
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin-right: 1%;
+    margin-left: 3%;
+}
+
+.education-entry {
+    background-color:#ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(193, 178, 178, 0.5);
+    color: #000000;
+}
+
+.education-entry h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #000000;
+}
+
+.education-entry h3 {
+    font-size:25px;
+    margin: 10px 0;
+    color: #9D5353;
+}
+
+.education-entry p {
+    font-size: 1em;
+    margin: 0;
+}
+.education-entry:hover{
+    background-color:#c79595;
+}
+
+
+
+
+/* mobile */
+#mobile{
+    display: none;
+}
+/* mediaqueries */
+@media (max-width: 768px) {
+    /* #desktop */
+    #desktop{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    .maincontainer {
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .propic {
+        height: 60px;
+    }
+    .name-icon{
+        margin-right: 10px;
+    }
+    .name {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .underline {
+        font-size: 25px;
+        margin-right: 0;
+    }
+
+    .underline::after {
+        width: 100px;
+    }
+
+    .img1 {
+        height: 25px;
+        margin: 3px;
+    }
+
+    .social-icon-container {
+        margin-left: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .card {
+        height: auto;
+        width: 90%;
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .cardp {
+        margin-top: 10px;
+        font-size: 10px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .navicondiv {
+        padding: 5%;
+    }
+    .navicon1{
+        margin-top: -1px;
+    }
+    .navicon1, .navicon, .navicon2 {
+        margin-bottom: 50px;
+    }
+    .container1 {
+        width: 335px;
+    }
+
+}
